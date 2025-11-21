@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Department Announcements</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      backdrop-filter: blur(2px);
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .viewer-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .pdf-box {
+      width: 90%;
+      max-width: 900px;
+      height: 80vh;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Department Announcements
+  </header>
+
+  <div class="viewer-container">
+    <div class="pdf-box">
+      <!-- Replace with your PDF file link -->
+      <iframe src="announcement.pdf"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    Announcer: Your Name Here
+  </footer>
+</body>
+</html>
